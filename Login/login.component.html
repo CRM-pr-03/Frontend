@@ -1,0 +1,23 @@
+<!-- login.component.html -->
+<div class="background">
+<h1 class="head">LOGIN FORM</h1>
+
+<body class="inner_body">
+<form [form Group]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" formControlName="username" required>
+  
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password" required>
+  
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</body>
+
+<h3>
+
+</h3>
+
+  
+</div>
